@@ -1,0 +1,1 @@
+<a href="<?= base_url() ?>connections/foursquare"><img src="<?= $assets ?>login-button.png"></a>
