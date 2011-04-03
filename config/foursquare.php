@@ -1,6 +1,6 @@
-<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
+con<?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 /**
-* Name:		Social Igniter : Module : Twitter Config
+* Name:		Social Igniter : Module : Foursquare Config
 * Author: 	Brennan Novak
 * 		  	contact@social-igniter.com
 *         	@brennannovak
@@ -8,15 +8,10 @@
 * Created by Brennan Novak
 *
 * Project:	http://social-igniter.com
-* Source: 	http://github.com/socialigniter/module-twitter
-*          
-* Created: 07-07-2010 
+* Source: 	http://github.com/socialigniter/foursquare
 *
-* Description: config for Twitter module for Social Igniter
+* Description: Foursquare module for Social Igniter
 */
 
-// Twitter
-$config['twitter']						= TRUE;
-$config['twitter_account']				= "";
-$config['twitter_token_one']			= "";
-$config['twitter_token_two']			= "";
+// Foursquare
+$config['foursquare_path'] 			= 'foursquare/';
