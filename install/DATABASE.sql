@@ -1,3 +1,5 @@
+INSERT INTO `settings` VALUES(NULL, 1, 'foursquare', 'widgets', 'TRUE');
+INSERT INTO `settings` VALUES(NULL, 1, 'foursquare', 'categories', 'TRUE');
 INSERT INTO `settings` VALUES(NULL, 1, 'foursquare', 'enabled', 'TRUE');
 INSERT INTO `settings` VALUES(NULL, 1, 'foursquare', 'consumer_key', '');
 INSERT INTO `settings` VALUES(NULL, 1, 'foursquare', 'consumer_key_secret', '');

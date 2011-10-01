@@ -9,13 +9,26 @@ class Settings extends Dashboard_Controller
         
 		$this->load->library('foursquare');
 
-		$this->data['page_title'] = 'Settings';
+		$this->data['page_title'] = 'Foursquare';
     }
  
  	function index()
 	{
-		$this->data['sub_title'] 	= 'Foursquare';
+		if (config_item('foursquare_enabled') == '') 
+		{
+			$this->session->set_flashdata('message', 'Oops, the Foursquare app is not installed');
+			redirect('settings/apps');
+		}
+	
+		$this->data['sub_title'] 	= 'Settings';
 		$this->data['shared_ajax'] .= $this->load->view(config_item('dashboard_theme').'/partials/settings_modules_ajax.php', $this->data, true);		
-		$this->render();
+		$this->render('dashboard_wide');
 	}
+
+	function widgets()
+	{
+		$this->data['sub_title'] 	= 'Widgets';		
+		
+		$this->render('dashboard_wide');
+	}	
 }
